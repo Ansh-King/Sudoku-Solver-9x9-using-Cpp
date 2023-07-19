@@ -1,0 +1,30 @@
+Sudoku Solver
+
+The Sudoku solver is a C++ program that solves 9x9 Sudoku puzzles using a backtracking algorithm. Sudoku is a popular logic-based number placement puzzle, and the objective is to fill a 9x9 grid with digits from 1 to 9, satisfying specific constraints for each row, column, and 3x3 subgrid.
+
+How to Use:
+
+To use the Sudoku solver:
+
+1. Compile the provided C++ code using a C++ compiler, such as g++ or Visual Studio C++ compiler.
+2. Run the compiled executable from the command line.
+3. Enter the Sudoku puzzle row by row, where each cell is represented by a digit from 1 to 9 or a dot (.) to indicate an empty cell.
+4. After entering all the values, the program will solve the Sudoku puzzle and display the initial and solved boards.
+
+Implementation Details:
+
+The C++ code implements a `Solution` class, containing three main functions:
+
+1. `isSafe`: This function checks if a given value can be placed in a specific cell (row and column) of the Sudoku board without violating the Sudoku rules (no duplicates in the same row, column, or 3x3 subgrid).
+
+2. `solve`: The `solve` function is the heart of the backtracking algorithm. It uses recursion and backtracking to try different values for empty cells until a valid solution is found or determined to be unsolvable.
+
+3. `solveSudoku`: A wrapper function that invokes `solve` to solve the entire Sudoku puzzle.
+
+The main function initializes the Sudoku board, takes user input, solves the puzzle using the `Solution` class, and displays the initial and solved Sudoku boards.
+
+Additional Notes:
+
+The program organizes the input and output of the Sudoku puzzle in a visually appealing grid format, making it user-friendly and easy to interact with. The backtracking algorithm ensures an efficient and correct solution to even the most challenging Sudoku puzzles.
+
+Users can clone this Git repository, modify, and contribute to further enhance the Sudoku solver, making it a valuable project for learning and practicing algorithms and C++ programming.
